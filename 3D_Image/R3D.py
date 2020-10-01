@@ -17,12 +17,12 @@ DisFoc=640/np.tan(2*pi*55/360)
 #--------------------------------------
 for list in seti:
    bx="%s"%seti[j-1]
-   frame = cv.imread('/home/zero/Documentos/Algorithm/Recursos/'+bx+'.png',0) 
+   frame = cv.imread('../Recursos/'+bx+'.png',0) 
    imgL = frame[0:720, 0:1280]
    imgR = frame[0:720, 1280:2560]
-   original = cv.imread('/home/zero/Documentos/Algorithm/Recursos/'+bx+'.png',1)
+   original = cv.imread('../Recursos/'+bx+'.png',1)
    original = original[0:720, 0:1280]
-   ff = cv.imread('/home/zero/Documentos/Algorithm/Recursos/'+bx+'.png',1)
+   ff = cv.imread('../Recursos/'+bx+'.png',1)
    ff= ff[0:720, 0:1280]
 #------------------------------------------------------------------
    strt=time.clock()
@@ -149,10 +149,10 @@ for list in seti:
    ax.set_zlabel('Y-axis of Image')
     
    plt.show() ################  Revisar para plotear #################
-   #plt.savefig('/home/zero/Documentos/Algorithm/3D Image/Plots/'+bx+'d R3D '+ts+'.png')     
-   #cv.imwrite('/home/zero/Documentos/Algorithm/3D Image/Plots/'+bx+'a Original '+ts+'.png',original)
-   #cv.imwrite('/home/zero/Documentos/Algorithm/3D Image/Plots/'+bx+'b HSV '+ts+'.png',res)
-   #cv.imwrite('/home/zero/Documentos/Algorithm/3D Image/Plots/'+bx+'c VF '+ts+'.png',ff)
+   #plt.savefig('../3D_Image/Plots/'+bx+'d R3D '+ts+'.png')     
+   #cv.imwrite('../3D_Image/Plots/'+bx+'a Original '+ts+'.png',original)
+   #cv.imwrite('../3D_Image/Plots/'+bx+'b HSV '+ts+'.png',res)
+   #cv.imwrite('../3D_Image/Plots/'+bx+'c VF '+ts+'.png',ff)
 #--------------------------------------------------------------------
 """
 NXT=np.arange(1,len(NYT)+1)
@@ -164,5 +164,5 @@ axf.legend()
 plt.xticks([1,2,3,4,5,6,7,8,9,10],
            ["1","2","3","4","5","6","7","8","9","10"])
 plt.title('Processing Time')
-plt.savefig('/home/zero/Documentos/Algorithm/3D Image/Processing Time'+ts+'.png')
+plt.savefig('../3D_Image/Processing Time'+ts+'.png')
 """
