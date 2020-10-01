@@ -22,7 +22,7 @@ while True:
       imgL = gray[0:Hei, 0:Mid]
       imgR = gray[0:Hei, Mid:Wid]
       if not ret:
-            print("Can't receive frame (stream end?). Exiting ...")
+            print("Can't receive frame")
             break
       cv.imshow("Right",imgL)
       cv.imshow("Left",imgR)
