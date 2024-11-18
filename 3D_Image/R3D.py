@@ -5,6 +5,12 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 from math import pi
 
+
+#Symbolic Pattern Recognition
+class symbolic_pattern:
+    def metaheuristic_optimization:
+        return 'symbolic_pattern'
+
 ts="%s"%time.strftime("%j %H:%M:%S")
 seti=[10]
 j=1
