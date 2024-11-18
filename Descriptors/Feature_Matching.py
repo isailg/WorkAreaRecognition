@@ -6,6 +6,11 @@ from xlrd import open_workbook
 from xlutils.copy import copy 
 from matplotlib import pyplot as plt
 
+#Symbolic Pattern Recognition
+class symbolic_pattern:
+    def metaheuristic_optimization(self):
+        return 'symbolic_pattern'
+    
 ######################### Global Variables ############################
 ts="%s"%time.strftime("%j %H:%M:%S")
 seti=[26,27,28,29,30,31,32,33,34,35,36,37,38]
